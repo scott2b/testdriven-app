@@ -42,7 +42,6 @@ class User(db.Model):
         except jwt.InvalidTokenError:
             return 'Invalid token. Please log in again.'
 
-
     def to_json(self):
         return {
             'id': self.id,
